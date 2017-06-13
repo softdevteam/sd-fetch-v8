@@ -2,10 +2,12 @@ DEPOT_PATH=PATH=$(shell pwd)/depot_tools:${PATH}
 
 all: v8/sd-build.sh v8/sd-run-bench.sh
 
-depot_tools:
-	git submodule init  # in case the user didn't clone with --recursive
+# in case the user didn't clone with --recursive
+depot_tools/gclient:
+	git submodule init
+	git submodule update
 
-v8: depot_tools
+v8: depot_tools/gclient
 	${DEPOT_PATH} gclient sync
 
 sd-branch: v8
