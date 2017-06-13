@@ -21,10 +21,10 @@ v8/sd-build.sh: sd-branch
 	@echo "${DEPOT_PATH} ninja -C out.gn/x64.release d8" >> $@
 	@chmod +x $@
 	@echo "\n\n-------- soft-dev specific info --------"
-	@echo "\nTo build d8 enter the 'v8' dir and run $@"
+	@echo "\nTo build d8 enter the 'v8' dir and run sd-build.sh"
 
 v8/sd-run-bench.sh: sd-branch
 	@echo "#!/bin/sh" > $@
 	@echo "tools/run_perf.py --arch x64 --binary-override-path out.gn/x64.release/d8 --buildbot test/js-perf-test/RegExp.json" >> $@
 	@chmod +x $@
-	@echo "\nTo run the example benchmark, enter the 'v8' dir and run $@"
+	@echo "\nTo run the example benchmark, enter the 'v8' dir and run sd-run-bench"
