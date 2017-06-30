@@ -1,0 +1,15 @@
+{
+  "path": ["."],
+  "main": "sd-run.js",
+  "run_count": 2000,
+  "timeout": 1000000,
+  "results_regexp": "^%s: (.+)$",
+  "tests": [
+    {"name": "Richards"},
+    {"name": "DeltaBlue"},
+    {"name": "RayTrace"},
+    {"name": "RegExp"},
+    {"name": "Splay"},
+    {"name": "NavierStokes"}
+  ]
+}
