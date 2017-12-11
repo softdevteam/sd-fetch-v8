@@ -1,2 +1,4 @@
 v8
-.gclient_entries
+.gclient*
+warmup_stats
+depot_tools
