@@ -1,6 +1,6 @@
 #!/bin/sh
 
-NPEXECS=30  # Number of process executions (30 in the warmup paper).
+NPEXECS=10  # Number of fresh process executions for each benchmark.
 CSV_FILES=sd-v8-results  # File stem only.
 PDF=sd-v8-plots.pdf
 TABLE=sd-v8-table.tex
